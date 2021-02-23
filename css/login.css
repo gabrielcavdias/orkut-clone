@@ -1,0 +1,111 @@
+
+main{
+    margin: 10px;
+    display: grid;
+    grid-template-areas: "apresenta apresenta login"
+                        "apresenta apresenta login"
+                        "apresenta apresenta cadastre";
+    grid-area: main;
+}
+header{
+    grid-area: header;
+}
+header nav ul{
+    display: flex;
+}
+header li{
+    list-style: none;
+    padding: 10px;
+}
+header a{
+    text-decoration: none;
+}
+.apresenta{
+    background-color: #fff;
+    padding: 20px;
+    grid-area: apresenta;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+.apresenta img{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+.apresenta p{
+    margin: 20px 0;
+    text-align: center;
+}
+.apresenta span{
+    color: #BE09B7;
+    font-weight: bold;
+}
+.entrar,.cadastre{
+    border: 2px solid #fff;
+    padding: 13px;
+    background-color: #E6EEF9;
+    width: 80%;
+}
+.entrar{
+    grid-area: login;
+}
+.login{
+    font-size: 0.8rem;
+}
+.login form div{
+    padding: 5px;
+}
+.entrar>p{
+    text-align: center;
+}
+.login span{
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+}
+#manter-logado{
+    margin-left: 20px;
+}
+.login img{
+    width: 60px;
+}
+.info-manter-logado{
+    color: rgb(102, 101, 101);
+    font-size: 0.8rem;
+    padding-left: 18px;
+}
+
+.entrar input[type="text"],input[type="password"]{
+    padding: 2px;
+    width: 50%;
+}
+.entrar .btnEntrar{
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid rgb(42, 42, 42);
+    background-color: #eee;
+    color: #000;
+    margin-left: 20px;
+}
+a[href="perdi-senha.html"]{
+    margin-top: 10px;
+    display: block;
+    margin-left: 20px;
+}
+.cadastre{
+    margin-top: 10px;
+    grid-area: cadastre;
+    text-align: center;
+}
+.cadastre a{
+    display: block;
+    font-weight: bold;
+}
+footer{
+    background-color: #BCCDE7;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+    grid-area: footer;
+    margin-right: 70px;
+}

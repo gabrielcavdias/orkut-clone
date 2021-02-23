@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/internal.css">
+    <link rel="stylesheet" href="css/recados.css">
+    <script src="js/recados.js" defer></script>
+    <title>Recados</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/orkut-logo.png" alt="logo krl ja falei">
+        </div>
+        <nav>
+            <ul class="abas">
+                <li><a href="perfil.html">Início</a></li>
+                <li><a href="recados.html">Página de recados</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="comunidades.html">Comunidades</a></li>
+            </ul>
+        </nav>
+        <p class="email">fulano@hotmail.com</p>
+        <div class="opcoes">
+            <a href="index.html">Sair</a>
+            <form action="busca.php" method="GET">
+                <input type="text" name="busca" id="busca" placeholder="pesquisa do orkut">
+                <input type="submit" value="🔍">
+            </form>
+        </div>
+    </header>
+    <div id="container">
+        <main>
+            <section class="card-perfil">
+                <div class="card-fotoNome">
+                    <img src="img/perfil.jpg" alt="Yusuke Urameshi">
+                    <h1 class="perfil-nome">Fulano Urameshi</h1>
+                    <p class="perfil-infos">
+                        <span>masculino</span>
+                        <span>solteiro(a)</span>
+                        <span>Brasil</span>
+                    </p>
+                </div>
+                <div class="editar-perfil">
+                    <a href="editar-perfil.html">👨‍🦰editar perfil</a>
+                </div>
+                <nav>
+                    <ul class="perfil-public">
+                        <li>👨‍🦱<a href="perfil.html">perfil</a></li>
+                        <li>📝<a href="recados.html">recados</a></li>
+                        <li>📷<a href="album.html">álbum</a></li>
+                        <li>📹<a href="videos.html">vídeos</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="perfil-private">
+                        <li>📶<a href="feeds.html">feeds</a></li>
+                        <li>🗒️<a href="lista.html">listas</a></li>
+                        <li>✉️<a href="mensagens.html">mensagens</a></li>
+                        <li>☀️<a href="depoimentos.html">depoimentos</a></li>
+                        <li>⚙️<a href="configuracoes.html">configurações</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <div class="editor-recados">
+                <textarea name="recado" id="recado" cols="30" rows="10" placeholder="digite texto ou cole HTML(HTML apenas para amigos)"></textarea>
+                <hr>
+                <div class="botoes-recados">
+                    <button class="btnpdr" id="enviar">enviar recado</button>
+                    <button class="btnpdr">visualizar</button>
+                    <button class="btnpdr">adicionar foto</button>
+                    <a href="#">dicas de recados</a>
+                </div>
+            </div>
+
+            <section class="scraps">
+                <div>
+                    <h1>Minha página de recados(2)</h1>
+                    <p><span>todos podem enviar recados - </span><a href="#">alterar configurações</a></p>
+                </div>
+                <p><a href="perfil.html">Início</a><span> > Minha página de recados</span></p>
+                <div class="opcoes-recados">
+                    <span>
+                        <button class="deleta-selecionado btnpdr">excluir recados selecionados</button>
+                        <button class="btnpdr">denunciar spam</button>
+                    </span>
+                    <select name="ver" id="ver">
+                        <option value="ver_10" selected>Ver 10 recados</option>
+                        <option value="ver_20">Ver 20 recados</option>
+                        <option value="ver_50">Ver 50 recados</option>
+                    </select>
+                </div>
+                <!--Seleciona e navega.. slá sem criatividade pra nomear classes-->
+                <div class="selecionav">
+                    <span>
+                        Selecionar: <a href="#" class="selec-tudo">Todos</a>, <a href="#" class="selec-nenhum">Nenhum</a>
+                    </span>
+                    <nav>
+                        <ul>
+                            <li>primeira</li>
+                            <li>|</li>
+                            <!--Tá tudo bem a IDE tá esperando uma tag mas é um < literal   -->
+                            <li>&lt; anterior</li>
+                            <li>|</li>
+                            <li>próxima ></li>
+                            <li>|</li>
+                            <li>última</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="recados-recebidos">
+                    <div class="recado">
+                        <!--Imagem e checkbox-->
+                        <div>
+                            <input type="checkbox" name="deleta" id="deleta_1">
+                            <img src="img/perfil.jpg" alt="Yusuke kkkk foda">
+                        </div>
+                        <!--Autor e recado-->
+                        <div>
+                            <a href="perfil.html">Fulano Urameshi</a><span>:</span>
+                            <img src="img/LRA1.gif" alt="Leio respondo e apago">
+                        </div>
+                        <!--Data e apagar-->
+                        <div>
+                            <p><span>20 fev(2 dias atrás)</span></p>
+                            <button class="btnpdr apagar-recado">Apagar</button>
+                        </div>
+                    </div>
+                    <div class="recado">
+                        <!--Imagem e checkbox-->
+                        <div>
+                            <input type="checkbox" name="deleta" id="deleta_2">
+                            <img src="img/kung-lao.jpg" alt="RAQEADO KKKK">
+                        </div>
+                        <!--Autor e recado-->
+                        <div>
+                            <a href="#">RAQUEADO PELO KUNG LAO</a><span>:</span>
+                            <p>Aì mâanoo me ajudah axo que tam qreno me raquiaaar!!! X_X<br>
+                                olha minha conta vè se tem algum viiirus:<br>
+                                e_mail: nataliahtinha2007@hotmail.com<br>senha:garotamauvada2007
+                            </p>
+                        </div>
+                        <!--Data e apagar-->
+                        <div>
+                            <p><span>20 fev(2 dias atrás)</span></p>
+                            <button class="btnpdr apagar-recado">Apagar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><img src="img/orkut-logo.png" alt="logo krai kkk"></li>
+                        <li><a href="#">Sobre o orkut</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Centro de segurança</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

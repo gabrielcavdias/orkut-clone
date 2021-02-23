@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/internal.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Seu Perfil</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/orkut-logo.png" alt="logo krl ja falei">
+        </div>
+        <nav>
+            <ul class="abas">
+                <li><a href="perfil.html">Início</a></li>
+                <li><a href="recados.html">Página de recados</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="comunidades.html">Comunidades</a></li>
+            </ul>
+        </nav>
+        <p class="email">fulano@hotmail.com</p>
+        <div class="opcoes">
+            <a href="index.html">Sair</a>
+            <form action="busca.php" method="GET">
+                <input type="text" name="busca" id="busca" placeholder="pesquisa do orkut">
+                <input type="submit" value="🔍">
+            </form>
+        </div>
+    </header>
+    <div id="container">
+        <main>
+            <section class="card-perfil">
+                <div class="card-fotoNome">
+                    <img src="img/perfil.jpg" alt="Yusuke Urameshi">
+                    <h1 class="perfil-nome">Fulano Urameshi</h1>
+                    <p class="perfil-infos">
+                        <span>masculino</span>
+                        <span>solteiro(a)</span>
+                        <span>Brasil</span>
+                    </p>
+                </div>
+                <div class="editar-perfil">
+                    <a href="editar-perfil.html">👨‍🦰editar perfil</a>
+                </div>
+                <nav>
+                    <ul class="perfil-public">
+                        <li>👨‍🦱<a href="perfil.html">perfil</a></li>
+                        <li>📝<a href="recados.html">recados</a></li>
+                        <li>📷<a href="album.html">álbum</a></li>
+                        <li>📹<a href="videos.html">vídeos</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="perfil-private">
+                        <li>📶<a href="feeds.html">feeds</a></li>
+                        <li>🗒️<a href="lista.html">listas</a></li>
+                        <li>✉️<a href="mensagens.html">mensagens</a></li>
+                        <li>☀️<a href="depoimentos.html">depoimentos</a></li>
+                        <li>⚙️<a href="configuracoes.html">configurações</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="central-perfil">
+                <div class="central-principal">
+                    <h1>Bem vindo(a), Fulano</h1>
+                    <div class="recursos">
+                        <div class="recursos-recados">
+                            <span>recados</span>
+                            <span>📝<a href="recados.html">2</a></span>
+                        </div>
+                        <div class="recursos-fotos">
+                            <span>fotos</span>
+                            <span>📷 <a href="fotos.html">9</a></span>
+                        </div>
+                        <div class="recursos-fas">
+                            <span>fãs</span>
+                            <span>⭐ <a href="fas.html">0</a></span>
+                        </div>
+                        <div class="recursos-msgs">
+                            <span>mensagens</span>
+                            <span>✉️ <a href="mensagens.html">0</a></span>
+                        </div>
+                    </div>
+                    <p><span class="central-destaque">Visualizações do seu perfil:</span>Desde Ago 2007: 10.000, Semana passada: 15, Ontem: 2</p>
+                    <p><span class="central-destaque">Seus visitantes recentes:</span><a href="#">Ciclano</a>, <a href="#">Beltrano</a>, <a href="#">RAQUEADO PELO KUNG LAO</a>, <a href="#">Beltrana</a></p>
+                    <p><span class="central-destaque">Sorte de hoje:</span> Não confunda a obra do mestre picasso com o picasso do mestre de obras.</p>
+                </div>
+                <div class="novos-amigos">
+                    <p><span class="central-destaque">Novos pedidos de amizade(1)</span></p>
+                    <div class="card-pedido">
+                        <img src="img/beltrana.jpg" alt="beltrana emo kkkk">
+                        <div>
+                            <a href="#">Beltrana EMUXINHA</a>
+                            <p>Beltrana é seu(sua) amigo(a)?</p>
+                            <button>sim</button>
+                            <button>não</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="amigos-perfil">
+                <h1>meus amigos<a href="amigos.html">(753)</a></h1>
+                <div class="amigos-grid">
+                    <div>
+                        <img src="img/amigo.jpg" alt="amigo genérico">
+                        <a href="#">João(326)</a>
+                    </div>
+                    <div>
+                        <img src="img/amigo.jpg" alt="amigo genérico">
+                        <a href="#">Pedro(128)</a>
+                    </div>
+                    <div>
+                        <img src="img/amigo.jpg" alt="amigo genérico">
+                        <a href="#">Jean(243)</a>
+                    </div>
+                    <div>
+                        <img src="img/amiga.jpg" alt="amiga genérica">
+                        <a href="#">Maria(988)</a>
+                    </div>
+                    <div>
+                        <img src="img/amiga.jpg" alt="amiga genérica">
+                        <a href="#">Natália(828)</a>
+                    </div>
+                    <div>
+                        <img src="img/kung-lao.jpg" alt="RAQUEADO KKKKK">
+                        <a href="#">John(56)</a>
+                    </div>
+                    <div>
+                        <img src="img/amigo.jpg" alt="amigo genérico">
+                        <a href="#">Dênis(440)</a>
+                    </div>
+                    <div>
+                        <img src="img/kung-lao.jpg" alt="RAQUEADO KKKKKKKK">
+                        <a href="#">Tim(23)</a>
+                    </div>
+                    <div>
+                        <img src="img/amiga.jpg" alt="amiga genérica">
+                        <a href="#">Uchiha(420)</a>
+                    </div>
+                </div>
+                <a class="todos-perfil" href="#">ver todos</a>
+                <button class="gerenciarbtn">gerenciar</button>
+            </section>
+            <section class="comunidades-perfil">
+                <h1>minhas comunidades <a href="#">(123)</a></h1>
+                <div class="comunidades-grid">
+                    <div>
+                        <img src="img/acordar-cedo.jpg" alt="Garfield kkk">
+                        <a href="#">Odeio acordar cedo</a>
+                    </div>
+                    <div>
+                        <img src="img/entrar-internet.jpg" alt="Qlq merda">
+                        <a href="#">Eu já entrei na Internet</a>
+                    </div>
+                    <div>
+                        <img src="img/n-gosta.jpg" alt="fake genérica">
+                        <a href="#">Não GOSTA de mim? PROBLEMA seu</a>
+                    </div>
+                    <div>
+                        <img src="img/nightwish.jpg" alt="Nightwish da Anette">
+                        <a href="#">Nightwish Brasil (OFICIAL)</a>
+                    </div>
+                    <div>
+                        <img src="img/anime-friends.jpg" alt="sdds de ir em evento">
+                        <a href="#">Anime Friends[2009]</a>
+                    </div>
+                    <div>
+                        <img src="img/yyh.jpg" alt="sdds dessa comunidade">
+                        <a href="#">Eternamente Yu Yu Hakusho</a>
+                    </div>
+                </div>
+                <a class="todos-perfil" href="#">ver todos</a>
+                <button class="gerenciarbtn">gerenciar</button>
+            </section>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><img src="img/orkut-logo.png" alt="logo krai kkk"></li>
+                        <li><a href="#">Sobre o orkut</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Centro de segurança</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

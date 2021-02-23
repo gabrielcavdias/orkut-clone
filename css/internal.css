@@ -1,0 +1,120 @@
+/*HEADER*/
+
+header{
+    background-color: #3B81BD;
+    box-shadow: inset 0 1px 5px rgba(26, 26, 26, 0.623);
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    margin-left: 18px;
+    background-color: #fff;
+}
+.logo img{
+    width: 70px;
+}
+.abas{
+    display: flex;
+    list-style-type: none;
+}
+header a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.email{
+    color: #1b3857;
+    font-weight: bold;
+    margin-left: 25%;
+}
+.opcoes form{
+    display: inline;
+    background-color: #215081;
+    border: 5px solid #215081;
+    border-radius: 10px;
+}
+input[name="busca"]{
+    border-radius: 8px;
+}
+.opcoes input[type="submit"]{
+    background: none;
+    border: 0;
+    padding: 2px;
+}
+/*CARD PERFIL*/
+.card-perfil{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1px;
+    grid-area: card;
+    width: 80%;
+    margin-bottom: 50px;
+}
+.perfil-nome, .perfil-infos, a[href="editar-perfil.html"]{
+    margin-left: 10px;
+}
+.card-perfil a{
+    text-decoration: none;
+}
+.card-perfil a:visited{
+    color: blue;
+}
+.perfil-nome{
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+.card-fotoNome img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+.perfil-infos{
+    color: #888;
+    font-size: 0.8rem;
+}
+.perfil-infos span{
+    display: block;
+}
+.editar-perfil{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.card-perfil nav>ul{
+    list-style-type: none;
+    border: 1px solid #fff;
+    margin-top: 5px;
+}
+.card-perfil nav>ul li{
+    background-color: #EFF8FF;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+.perfil-private{
+    padding-bottom: 10px;
+}
+
+/*FOOTER*/
+footer{
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    grid-area: footer;
+    box-shadow: inset 0 0 5px rgba(114, 114, 114, 0.8)
+}
+footer img{
+    width: 60px;
+    padding: 5px;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+}
+footer li>a{
+    padding: 5px;
+    overflow: hidden;
+    font-size: 0.8rem
+}
