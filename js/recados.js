@@ -36,14 +36,16 @@ document.querySelector('#enviar').addEventListener('click', () =>{
     secDiv.appendChild(span)
     let paragrafoRecado = document.createElement('p')
     paragrafoRecado.innerHTML = texto.value
-    secDiv.appendChild(paragrafoRecado)
+    let containerParagrafo = document.createElement('div')
+    containerParagrafo.appendChild(paragrafoRecado)
+    secDiv.appendChild(containerParagrafo)
     //Cria a div que vai conter a data e o botão de apagar.
     let trdDiv = document.createElement('div')
     //Cria paragráfo com data.
     let data = document.createElement('p')
     let innerdata = document.createElement('span')
-    let diadehj = new Date()
-    innerdata.innerText = `${diadehj.getDay()} ${diadehj.getMonth()} (Segundos atrás)`
+    let diadehj = new Date() 
+    innerdata.innerText = `${diadehj.getDate()} ${NumtoMes(diadehj.getMonth()+1)} (Segundos atrás)`
     data.appendChild(innerdata)
     trdDiv.appendChild(data)
     //Cria botão de apagar.
@@ -61,3 +63,31 @@ document.querySelector('#enviar').addEventListener('click', () =>{
     document.querySelector('.recados-recebidos').appendChild(recado)
     escutar()
 })
+function NumtoMes(num){
+    switch(num){
+        case 1:
+            return "jan"
+        case 2:
+            return "fev"
+        case 3:
+            return "mar"
+        case 4:
+            return "abr"
+        case 5:
+            return "mai"
+        case 6:
+            return "jun"
+        case 7:
+            return "jul"
+        case 8:
+            return "ago"
+        case 9:
+            return "set"
+        case 10:
+            return "out"
+        case 11:
+            return "nov"
+        case 12:
+            return "dez"
+    }
+}
